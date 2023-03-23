@@ -25,7 +25,7 @@ public class PostLogic : IPostLogic
         }
 
         ValidatePost(dto);
-        Post post = new Post(user, dto.Title);
+        Post post = new Post(user, dto.Title, dto.NewText, dto.Karma);
         Post created = await postDao.CreateAsync(post);
         return created;
     }
@@ -38,7 +38,6 @@ public class PostLogic : IPostLogic
     private void ValidatePost(PostCreationDto dto)
     {
         if (string.IsNullOrEmpty(dto.Title)) throw new Exception("Title cannot be empty.");
-        // other validation stuff
     }
     public async Task UpdateAsync(PostUpdateDto dto)
     {
@@ -67,8 +66,10 @@ public class PostLogic : IPostLogic
         User userToUse = user ?? existing.Owner;
         string titleToUse = dto.Title ?? existing.Title;
         bool completedToUse = dto.IsCompleted ?? existing.IsCompleted;
+        string newTextToUse = dto.NewText ?? existing.NewText;
+        int karmaToUse = dto.Karma ?? existing.Karma;
     
-        Post updated = new (userToUse, titleToUse)
+        Post updated = new (userToUse, titleToUse, newTextToUse, karmaToUse )
         {
             IsCompleted = completedToUse,
             Id = existing.Id,
@@ -81,7 +82,7 @@ public class PostLogic : IPostLogic
 
     private void ValidatePost(Post dto)
     {
-        if (string.IsNullOrEmpty(dto.Title + dto.Text)) throw new Exception("Title and text cannot be empty.");
+        if (string.IsNullOrEmpty(dto.Title + dto.NewText)) throw new Exception("Title and text cannot be empty.");
     }
     
     public async Task DeleteAsync(int id)

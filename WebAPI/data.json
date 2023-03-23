@@ -6,6 +6,13 @@
       "Password": null,
       "Email": null,
       "Posts": null
+    },
+    {
+      "Id": 2,
+      "UserName": "Grisen",
+      "Password": null,
+      "Email": null,
+      "Posts": null
     }
   ],
   "Posts": [
@@ -19,6 +26,20 @@
         "Posts": null
       },
       "Title": "Dumme dyr",
+      "Text": null,
+      "Karma": 0,
+      "IsCompleted": false
+    },
+    {
+      "Id": 2,
+      "Owner": {
+        "Id": 2,
+        "UserName": "Grisen",
+        "Password": null,
+        "Email": null,
+        "Posts": null
+      },
+      "Title": "Grisen er tilbage",
       "Text": null,
       "Karma": 0,
       "IsCompleted": false
