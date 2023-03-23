@@ -1,35 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\OneDrive\\Skrivebord\\Assignment1DNP\\Application\\Application.csproj": {}
+    "C:\\Users\\Marius\\RiderProjects\\AssignmentDNP\\Application\\Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\OneDrive\\Skrivebord\\Assignment1DNP\\Application\\Application.csproj": {
+    "C:\\Users\\Marius\\RiderProjects\\AssignmentDNP\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\OneDrive\\Skrivebord\\Assignment1DNP\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\Marius\\RiderProjects\\AssignmentDNP\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\User\\OneDrive\\Skrivebord\\Assignment1DNP\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\OneDrive\\Skrivebord\\Assignment1DNP\\Application\\obj\\",
+        "projectPath": "C:\\Users\\Marius\\RiderProjects\\AssignmentDNP\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\Marius\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Marius\\RiderProjects\\AssignmentDNP\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Marius\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\User\\OneDrive\\Skrivebord\\Assignment1DNP\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\User\\OneDrive\\Skrivebord\\Assignment1DNP\\Domain\\Domain.csproj"
+              "C:\\Users\\Marius\\RiderProjects\\AssignmentDNP\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Marius\\RiderProjects\\AssignmentDNP\\Domain\\Domain.csproj"
               }
             }
           }
@@ -59,28 +57,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\User\\OneDrive\\Skrivebord\\Assignment1DNP\\Domain\\Domain.csproj": {
+    "C:\\Users\\Marius\\RiderProjects\\AssignmentDNP\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\OneDrive\\Skrivebord\\Assignment1DNP\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Marius\\RiderProjects\\AssignmentDNP\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\User\\OneDrive\\Skrivebord\\Assignment1DNP\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\OneDrive\\Skrivebord\\Assignment1DNP\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\Marius\\RiderProjects\\AssignmentDNP\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Marius\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Marius\\RiderProjects\\AssignmentDNP\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Marius\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -114,7 +110,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
