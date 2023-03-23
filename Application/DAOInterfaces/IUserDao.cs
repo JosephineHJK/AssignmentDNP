@@ -1,0 +1,12 @@
+using Domain.Models;
+using Entities.DTO;
+
+namespace Domain.DAOInterfaces;
+
+public interface IUserDao
+{
+    Task<User> CreateAsync(User user);
+    Task<User?> GetByUsernameAsync(string userName);
+    public Task<IEnumerable<User>> GetAsync(SearchUserParametersDto searchParameters);
+    Task<User?> GetByIdAsync(int id);
+}

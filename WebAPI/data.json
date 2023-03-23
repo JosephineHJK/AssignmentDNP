@@ -1,0 +1,27 @@
+{
+  "Users": [
+    {
+      "Id": 1,
+      "UserName": "Mario",
+      "Password": null,
+      "Email": null,
+      "Posts": null
+    }
+  ],
+  "Posts": [
+    {
+      "Id": 1,
+      "Owner": {
+        "Id": 1,
+        "UserName": "Mario",
+        "Password": null,
+        "Email": null,
+        "Posts": null
+      },
+      "Title": "Dumme dyr",
+      "Text": null,
+      "Karma": 0,
+      "IsCompleted": false
+    }
+  ]
+}
