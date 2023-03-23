@@ -5,12 +5,14 @@ public class PostCreationDto
     public int OwnerId { get; }
     public string Title { get; }
     
-    public string Text { get; }
+    public string NewText { get; }
+    public int Karma { get; }
 
-    public PostCreationDto(int ownerId, string title, string text)
+    public PostCreationDto(int ownerId, string title, string newText, int karma)
     {
         OwnerId = ownerId;
         Title = title;
-        Text = text;
+        NewText = newText;
+        Karma = karma;
     }
 }

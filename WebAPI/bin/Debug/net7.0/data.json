@@ -6,6 +6,27 @@
       "Password": null,
       "Email": null,
       "Posts": null
+    },
+    {
+      "Id": 2,
+      "UserName": "Grisen",
+      "Password": null,
+      "Email": null,
+      "Posts": null
+    },
+    {
+      "Id": 3,
+      "UserName": "Hende d\u00E6r",
+      "Password": null,
+      "Email": null,
+      "Posts": null
+    },
+    {
+      "Id": 4,
+      "UserName": "kinko",
+      "Password": null,
+      "Email": "kinko@stinko.de",
+      "Posts": null
     }
   ],
   "Posts": [
@@ -19,7 +40,35 @@
         "Posts": null
       },
       "Title": "Dumme dyr",
-      "Text": null,
+      "NewText": null,
+      "Karma": 0,
+      "IsCompleted": false
+    },
+    {
+      "Id": 2,
+      "Owner": {
+        "Id": 2,
+        "UserName": "Grisen",
+        "Password": null,
+        "Email": null,
+        "Posts": null
+      },
+      "Title": "Grisen er tilbage",
+      "NewText": null,
+      "Karma": 0,
+      "IsCompleted": false
+    },
+    {
+      "Id": 3,
+      "Owner": {
+        "Id": 2,
+        "UserName": "Grisen",
+        "Password": null,
+        "Email": null,
+        "Posts": null
+      },
+      "Title": "Jeg skal have noget",
+      "NewText": "L\u00E6kkert Mad",
       "Karma": 0,
       "IsCompleted": false
     }

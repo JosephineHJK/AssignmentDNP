@@ -67,9 +67,9 @@ public class PostLogic : IPostLogic
         string titleToUse = dto.Title ?? existing.Title;
         bool completedToUse = dto.IsCompleted ?? existing.IsCompleted;
         string newTextToUse = dto.NewText ?? existing.NewText;
-        int karmaToUse = dto.Karma ?? existing.Karma;
-    
-        Post updated = new (userToUse, titleToUse, newTextToUse, karmaToUse )
+        int karmaToUse = dto.Karma;
+
+        Post updated = new (userToUse, titleToUse, newTextToUse, karmaToUse)
         {
             IsCompleted = completedToUse,
             Id = existing.Id,

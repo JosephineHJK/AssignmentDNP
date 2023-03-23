@@ -7,16 +7,13 @@ public class SearchPostParametersDto
     public bool? CompletedStatus { get;}
     public string? TitleContains { get;}
     public string? TextContains { get; }
-    
-    public string? Password { get; }
 
-    public SearchPostParametersDto(string? username, int? userId, bool? completedStatus, string? titleContains, string? textContains, string? password)
+    public SearchPostParametersDto(string? username, int? userId, bool? completedStatus, string? titleContains, string? textContains)
     {
         Username = username;
         UserId = userId;
         CompletedStatus = completedStatus;
         TitleContains = titleContains;
         TextContains = textContains;
-        Password = password;
     }
 }

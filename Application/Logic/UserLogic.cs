@@ -23,7 +23,7 @@ public class UserLogic : IUserLogic
         ValidateData(dto);
         User toCreate = new User
         {
-            UserName = dto.UserName
+            UserName = dto.UserName, Email = dto.Email, Password = dto.Password
         };
     
         User created = await userDao.CreateAsync(toCreate);
@@ -40,6 +40,7 @@ public class UserLogic : IUserLogic
     {
         string userName = userToCreate.UserName;
         string passWord = userToCreate.Password;
+        string email = userToCreate.Email;
 
         if (userName.Length < 3)
             throw new Exception("Username must be at least 3 characters!");
@@ -48,6 +49,8 @@ public class UserLogic : IUserLogic
             throw new Exception("Username must be less than 16 characters!");
         if (passWord.Length < 1)
             throw new Exception("You must write something!!");
+        if (email.Length < 1)
+            throw new Exception("Write your email here");
     }
     public Task<IEnumerable<User>> GetAsync(SearchUserParametersDto searchParameters)
     {
