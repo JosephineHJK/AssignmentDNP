@@ -8,7 +8,6 @@ namespace Domain.Logic;
 public class PostLogic : IPostLogic
 {
     
-    //bimbam
     private readonly IPostDao postDao;
     private readonly IUserDao userDao;
 
