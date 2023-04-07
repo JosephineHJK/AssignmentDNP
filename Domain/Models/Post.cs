@@ -1,3 +1,5 @@
+using Entities.DTO;
+
 namespace Domain.Models;
 
 public class Post

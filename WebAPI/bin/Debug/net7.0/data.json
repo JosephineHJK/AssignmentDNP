@@ -27,6 +27,20 @@
       "Password": null,
       "Email": "kinko@stinko.de",
       "Posts": null
+    },
+    {
+      "Id": 5,
+      "UserName": "jenne",
+      "Password": "firserfesten",
+      "Email": "jenne@stinko.de",
+      "Posts": null
+    },
+    {
+      "Id": 6,
+      "UserName": "Niller",
+      "Password": "nillerboy",
+      "Email": "nillerboy@niller.dk",
+      "Posts": null
     }
   ],
   "Posts": [
@@ -69,6 +83,20 @@
       },
       "Title": "Jeg skal have noget",
       "NewText": "L\u00E6kkert Mad",
+      "Karma": 0,
+      "IsCompleted": false
+    },
+    {
+      "Id": 4,
+      "Owner": {
+        "Id": 6,
+        "UserName": "Niller",
+        "Password": "nillerboy",
+        "Email": "nillerboy@niller.dk",
+        "Posts": null
+      },
+      "Title": "Ondt i maven",
+      "NewText": "jeg har ondt i maven",
       "Karma": 0,
       "IsCompleted": false
     }
