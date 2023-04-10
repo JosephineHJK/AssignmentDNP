@@ -31,9 +31,22 @@ public class UserLogic : IUserLogic
         return created;
     }
 
-    public Task<User> Create(UserCreationDto dto)
+    public async Task<User> Create(UserCreationDto dto)
     {
-        throw new NotImplementedException();
+        
+        User? existing = await userDao.GetByUsernameAsync(dto.UserName);
+        if (existing != null)
+            throw new Exception("Username already taken!");
+
+        ValidateData(dto);
+        User toCreate = new User
+        {
+            UserName = dto.UserName
+        };
+        
+        User created = await userDao.CreateAsync(toCreate);
+        
+        return created;
     }
 
     private static void ValidateData(UserCreationDto userToCreate)
